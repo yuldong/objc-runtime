@@ -586,6 +586,7 @@ struct class_ro_t {
     const uint8_t * ivarLayout;
     
     const char * name;
+    // 存放编译期确定的信息，随后被拷贝到class_rw_t中
     method_list_t * baseMethodList;
     protocol_list_t * baseProtocols;
     const ivar_list_t * ivars;
